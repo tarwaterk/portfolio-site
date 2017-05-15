@@ -1,0 +1,34 @@
+{
+  "name": "portfolio-site",
+  "version": "1.0.0",
+  "description": "portfolio site to be put on personal server",
+  "main": "server.js",
+  "engines": {
+    "node": "^4.5.0"
+  },
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tarwaterk/portfolio-site.git"
+  },
+  "author": "Kevin Tarwater",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tarwaterk/portfolio-site/issues"
+  },
+  "homepage": "https://github.com/tarwaterk/portfolio-site#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-sass": "^3.1.0",
+    "nodemon": "^1.11.0"
+  }
+}
