@@ -1,6 +1,7 @@
 const gulp = require("gulp");
 const browserSync = require("browser-sync").create();
 const sass = require("gulp-sass");
+const babel = require("gulp-babel");
 const autoprefixer = require("gulp-autoprefixer");
 const nodemon = require("gulp-nodemon");
 
@@ -18,8 +19,18 @@ gulp.task("buildStyles", function() {
 			browsers: ['last 2 version'],
 			cascade: false
 		}))
-		.pipe(gulp.dest("./dist/styles"));
+		.pipe(gulp.dest("./dist/styles"))
+		.pipe(browserSync.stream());
 });
+
+gulp.task("buildScripts", function() {
+	return gulp.src("source/scripts/*.js")
+		.pipe(babel({
+			presets: ['es2015']
+		}))
+		.pipe(gulp.dest("dist/scripts"))
+		.pipe(browserSync.stream());
+})
 
 gulp.task("nodemon", function() {
 	nodemon({
@@ -29,16 +40,12 @@ gulp.task("nodemon", function() {
 	});
 });
 
-gulp.task("watch", ["buildStyles:watch"], function() {
+gulp.task("watch", function() {
 	gulp.watch(["./*.html", "./dist/**/*.*"], function() {
-		console.log("RELOAD WATCH RAN");
 		browserSync.reload();
 	});
-	
-});
-
-gulp.task("buildStyles:watch", function() {
 	gulp.watch("./source/styles/*.scss", ["buildStyles"]);
+	gulp.watch("./source/scripts/*.js", ["buildScripts"]);
 });
 
 gulp.task("default", function() {
