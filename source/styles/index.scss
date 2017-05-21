@@ -1,8 +1,8 @@
-$color1: #005377;
-$color2: #e57a64;
-$color3: #3a435e;
-$color4: #455561;
-$color5: #5c6672;
+$color1: #37392e;
+$color2: #19647e;
+$color3: #28afb0;
+$color4: #ddcecd;
+$color5: #002500;
 $skew: 2deg;
 
 a {
@@ -14,14 +14,14 @@ li {
 }
 
 body {
-	background: #F4FAFF;
+	background: $color5;
 	margin: 0;
 }
 
 .nav__menu {
 	display: flex;
 	justify-content: center;
-	background: $color4;
+	background: $color2;
 	margin: 0;
 	padding: 10px 0;
 }
@@ -30,7 +30,7 @@ body {
 	margin: 0 10px;
 	text-transform: uppercase;
 	a {
-		color: #FFF;
+		color: $color4;
 	}
 }
 
@@ -52,6 +52,8 @@ body {
 
 .sect--about {
 	font-family: Helvetica;
+	display: flex;
+	justify-content: space-between;
 }
 
 .sect--projects {
@@ -70,18 +72,15 @@ body {
 }
 
 .photo {
-	width: 45%;
+	width: 28.5%;
 	margin: auto;
-	max-width: 300px;
 	background: $color2;
 	padding: 5px 20px 0 20px;
-	transform: skewX(-$skew);
 	img {
 		position: relative;
 		left: 5%;
 		width: 90%;
 		border-radius: 4px;
-		transform: skewX($skew);
 	}
 }
 
@@ -93,14 +92,10 @@ body {
 
 .sect__description--about {
 	margin: 20px auto;
-	max-width: 600px;
-	background: $color1;
-	color: $color2;
+	width: 60%;
+	background: $color3;
+	color: $color4;
 	padding: 10px 20px;
-	transform: skewX($skew);
-	>* {
-		transform: skewX(-$skew);
-	}
 }
 
 .sect__description--contact {
@@ -140,8 +135,8 @@ body {
 }
 
 .project--skew-left {
-	background: $color1;
-	color: $color2;
+	background: $color3;
+	color: $color4;
 	transform: skewX($skew);
 	>* {
 		transform: skewX(-$skew);
@@ -150,7 +145,7 @@ body {
 
 .project--skew-right {
 	background: $color2;
-	color: $color1;
+	color: $color4;
 	transform: skewX(-$skew);
 	>* {
 		transform: skewX($skew);
