@@ -6,133 +6,131 @@
 		World's Best Portfolio
 	</title>
 	<link rel="stylesheet" type="text/css" href="/dist/styles/index.css" />
+	<script src="https://use.fontawesome.com/e1366c5969.js"></script>
 </head>
 
 <body>
 	<div class="nav">
 		<ul class="nav__menu">
-			<li class="nav__menu-item"><a href="#">about</a></li>
-			<li class="nav__menu-item"><a href="#">projects</a></li>
-			<li class="nav__menu-item"><a href="#">resume</a></li>
-			<li class="nav__menu-item"><a href="#">contact</a></li>
+			<li class="nav__menu-item"><a href="#about">about</a></li>
+			<li class="nav__menu-item"><a href="#projects">projects</a></li>
+			<li class="nav__menu-item"><a href="#resume">resume</a></li>
+			<li class="nav__menu-item"><a href="#contact">contact</a></li>
 		</ul>
 	</div>
 
-	<div class="sect sect--about">
-		<div class="bust-image">
-			<img src="/images/profile-pic.jpg"/>
+	<div class="sect-container">
+
+		<div id="about" class="sect sect--about">
+			<div class="photo">
+				<img src="/images/profile-pic.jpg"/>
+			</div>
+			<div class="sect__description sect__description--about">
+				<p class="name">
+					Kevin Tarwater
+				</p>
+				<p class="job-title">
+					Web Developer
+				</p>
+				<p>
+					I'm a classically trained physicist turned web developer. After finding that academia wasn't for me, I fell back to my first love of coding and started teaching myself the ropes. I have sense continued to dive deeper into the seemingly infinite ocean of customer facing user interfaces and supporting architectures.<br/>
+					I am currently happily employed as a Web Developer at Caleres Inc.
+				</p>
+				<div class="social-icon-container">
+					<a class="social-icon" href="https://github.com/tarwaterk"><i class="fa fa-github fa-2x"></i></a>
+					<a class="social-icon" href="https://www.linkedin.com/in/kevin-tarwater-50673b70/"><i class="fa fa-linkedin-square fa-2x"></i></a>
+				</div>
+			</div>
 		</div>
-		<div class="sect__description sect__description--about">
-			<p>
-				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+		<div id="projects" class="sect sect--projects">
+			<p class="sect__description">
+
 			</p>
-			<div class="social-icons">
-				<a href="placeholder">Github</a>
-				<a href="placeholder">LinkedIn</a>
+			<div class="project project--skew-left">
+				<div class="project__info">
+					<p class="project__title">
+						Random Quote Generator
+					</p>
+					<p class="project__description">
+						Allows user to generate a random quote that they then can Tweet.
+					</p>
+					<ul class="project__tech-list">
+						<li class="project__tech-list-item">SASS</li>
+						<li class="project__tech-list-item">ANGULAR</li>
+					</ul>
+				</div>
+			</div>
+			<div class="project project--skew-right">
+				<div class="project__info">
+					<p class="project__title">
+						Local Weather App
+					</p>
+					<p class="project__description">
+						Users can see current weather in their area.
+					</p>
+					<ul class="project__tech-list">
+						<li class="project__tech-list-item">SASS</li>
+						<li class="project__tech-list-item">ANGULAR</li>
+					</ul>
+				</div>
+			</div>
+			<div class="project project--skew-left">
+				<div class="project__info">
+					<p class="project__title">
+						Wikipedia Viewer
+					</p>
+					<p class="project__description">
+						Allows users to search Wikipedia.org through a custom interface.
+					</p>
+					<ul class="project__tech-list">
+						<li class="project__tech-list-item">SASS</li>
+						<li class="project__tech-list-item">ANGULAR</li>
+					</ul>
+				</div>
+			</div>
+			<div class="project project--skew-right">
+				<div class="project__info">
+					<p class="project__title">
+						Calculator
+					</p>
+					<p class="project__description">
+						Users can have access to a web-based scientific calculator.
+					</p>
+					<ul class="project__tech-list">
+						<li class="project__tech-list-item">SASS</li>
+						<li class="project__tech-list-item">REACT</li>
+					</ul>
+				</div>
+			</div>
+			<div class="project project--skew-left">
+				<div class="project__info">
+					<p class="project__title">
+						Twitch Streamer List
+					</p>
+					<p class="project__description">
+						View and sort and list of certain Twitch streamers.
+					</p>
+					<ul class="project__tech-list">
+						<li class="project__tech-list-item">SASS</li>
+						<li class="project__tech-list-item">ANGULAR</li>
+					</ul>
+				</div>
 			</div>
 		</div>
-	</div>
 
-	<div class="sect sect--project">
-		<p class="sect__description">
+		<div id="resume" class="sect sect--resume">
+			<p class="sect__description">
 
-		</p>
-		<div class="project project--skew-left">
-			<div class="project__image">
-				<img src="/images/random-quote.png"/>
-			</div>
-			<div class="project__info">
-				<p class="project__title">
-					Random Quote Generator
-				</p>
-				<p class="project__description">
-					Allows user to generate a random quote that they then can Tweet.
-				</p>
-				<ul class="project__tech-list">
-					<li class="project__tech-list-item">SASS</li>
-					<li class="project__tech-list-item">ANGULAR</li>
-				</ul>
-			</div>
+			</p>
 		</div>
-		<div class="project project--skew-right">
-			<div class="project__info">
-				<p class="project__title">
-					Local Weather App
-				</p>
-				<p class="project__description">
-					Users can see current weather in their area.
-				</p>
-				<ul class="project__tech-list">
-					<li class="project__tech-list-item">SASS</li>
-					<li class="project__tech-list-item">ANGULAR</li>
-				</ul>
-			</div>
-			<div class="project__image">
-				<img src="/images/weather-app.png"/>
-			</div>
-		</div>
-		<div class="project project--skew-left">
-			<div class="project__image">
-				<img src="/images/wikipedia-search.png"/>
-			</div>
-			<div class="project__info">
-				<p class="project__title">
-					Wikipedia Viewer
-				</p>
-				<p class="project__description">
-					Allows users to search Wikipedia.org through a custom interface.
-				</p>
-				<ul class="project__tech-list">
-					<li class="project__tech-list-item">SASS</li>
-					<li class="project__tech-list-item">ANGULAR</li>
-				</ul>
-			</div>
-		</div>
-		<div class="project project--skew-right">
-			<div class="project__info">
-				<p class="project__title">
-					Calculator
-				</p>
-				<p class="project__description">
-					Users can have access to a web-based scientific calculator.
-				</p>
-				<ul class="project__tech-list">
-					<li class="project__tech-list-item">SASS</li>
-					<li class="project__tech-list-item">REACT</li>
-				</ul>
-			</div>
-			<div class="project__image">
-				<img src="/images/calculator.png"/>
-			</div>
-		</div>
-		<div class="project project--skew-left">
-			<div class="project__image">
-				<img src="/images/twitch-list.png"/>
-			</div>
-			<div class="project__info">
-				<p class="project__title">
-					Twitch Streamer List
-				</p>
-				<p class="project__description">
-					View and sort and list of certain Twitch streamers.
-				</p>
-				<ul class="project__tech-list">
-					<li class="project__tech-list-item">tech item</li>
-				</ul>
-			</div>
-		</div>
-	</div>
 
-	<div class="sect sect--resume">
-		<p class="sect__description">
+		<div id="contact" class="sect sect--contact">
+			<p class="sect__description sect__description--contact">
+				I prefer to be contacted through email at tarwaterk@gmail.com
+			</p>
+		</div>
 
-		</p>
-	</div>
-
-	<div class="sect sect--contact">
-		<p class="sect__description">
-
-		</p>
 	</div>
 </body>
 
