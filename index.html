@@ -5,33 +5,39 @@
 	<title>
 		World's Best Portfolio
 	</title>
+	<link href="https://fonts.googleapis.com/css?family=Cabin|Raleway" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="/dist/styles/index.css" />
+	<link rel="stylesheet" type="text/css" href="/dist/styles/bubbles.css" />
 	<script src="https://use.fontawesome.com/e1366c5969.js"></script>
 </head>
 
 <body>
 	<div class="nav">
 		<ul class="nav__menu">
+			<li class="nav__menu-item"><a href="#home"><img src="/images/logo-black.svg"/></a></li>
 			<li class="nav__menu-item"><a href="#about">about</a></li>
-			<li class="nav__menu-item"><a href="#projects">projects</a></li>
-			<li class="nav__menu-item"><a href="#resume">resume</a></li>
+			<li class="nav__menu-item"><a href="#work">work</a></li>
 			<li class="nav__menu-item"><a href="#contact">contact</a></li>
 		</ul>
 	</div>
 
+	<div class="bubble-container"></div>
+
 	<div class="sect-container">
 
-		<div id="about" class="sect sect--about">
-			<div class="photo">
-				<img src="/images/profile-pic.jpg"/>
-			</div>
-			<div class="sect__description sect__description--about">
+		<div id="home" class="sect sect--home">
+			<div class="home-info-container">
 				<p class="name">
 					Kevin Tarwater
 				</p>
 				<p class="job-title">
-					Web Developer
+					web developer
 				</p>
+			</div>
+		</div>
+
+		<div id="about" class="sect sect--about">
+			<div class="sect__description sect__description--about">
 				<p>
 					I'm a classically trained physicist turned web developer. After finding that academia wasn't for me, I fell back to my first love of coding and started teaching myself the ropes. I have sense continued to dive deeper into the seemingly infinite ocean of customer facing user interfaces and supporting architectures.<br/>
 					I am currently happily employed as a Web Developer at Caleres Inc.
@@ -43,11 +49,11 @@
 			</div>
 		</div>
 
-		<div id="projects" class="sect sect--projects">
+		<div id="work" class="sect sect--work">
 			<p class="sect__description">
 
 			</p>
-			<div class="project project--skew-left">
+			<div class="project">
 				<div class="project__info">
 					<p class="project__title">
 						Random Quote Generator
@@ -61,7 +67,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="project project--skew-right">
+			<div class="project">
 				<div class="project__info">
 					<p class="project__title">
 						Local Weather App
@@ -75,7 +81,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="project project--skew-left">
+			<div class="project">
 				<div class="project__info">
 					<p class="project__title">
 						Wikipedia Viewer
@@ -89,7 +95,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="project project--skew-right">
+			<div class="project">
 				<div class="project__info">
 					<p class="project__title">
 						Calculator
@@ -103,7 +109,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="project project--skew-left">
+			<div class="project">
 				<div class="project__info">
 					<p class="project__title">
 						Twitch Streamer List
@@ -119,12 +125,6 @@
 			</div>
 		</div>
 
-		<div id="resume" class="sect sect--resume">
-			<p class="sect__description">
-
-			</p>
-		</div>
-
 		<div id="contact" class="sect sect--contact">
 			<p class="sect__description sect__description--contact">
 				I prefer to be contacted through email at tarwaterk@gmail.com
@@ -135,5 +135,6 @@
 </body>
 
 <script type="text/javascript" src="/dist/scripts/index.js"></script>
+<script type="text/javascript" src="/dist/scripts/bubbles.js"></script>
 
 </html>
