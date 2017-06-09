@@ -1,6 +1,6 @@
 let BUBBLE_EFFECT_WIDTH = window.innerWidth - 50;
 let BUBBLE_EFFECT_HEIGHT = window.innerHeight;
-const NUMBER_OF_BUBBLES = 100;
+const NUMBER_OF_BUBBLES = 70;
 const RADIUS = 25;
 const DIAMETER = 2*RADIUS;
 const BUBBLE_SIZE_STYLE = `width:${DIAMETER}px;height:${DIAMETER}px;`;
@@ -18,8 +18,8 @@ let Bubble = class {
     this.domElement.style = BUBBLE_SIZE_STYLE;
     this.pos = pos;
     this.vel = {
-      "x": getRandomNumber(-2,2),
-      "y": getRandomNumber(-2,2)
+      "x": getRandomNumber(-0.5,0.5),//getRandomNumber(-2,2),
+      "y": getRandomNumber(0,30)
     };
     this.center = {
       "x": pos.x + RADIUS,
@@ -108,12 +108,11 @@ let calcResponseVector = (pos1, pos2)=>{
     "x": 0,
     "y": 0
   };
+  const normalizationFactor = calcDistanceBetween(pos1, pos2);
   
-  if(Math.abs(pos2.x-pos1.x) > 0.1 && Math.abs(pos2.y-pos1.y) > 0.1) {
-    response = {
-      "x": 1/(pos2.x - pos1.x),
-      "y": 1/(pos2.y - pos1.y)
-    }
+  response = {
+    "x": ((pos2.x - pos1.x) / normalizationFactor) * 1,
+    "y": ((pos2.y - pos1.y) / normalizationFactor) * 1
   }
   
   return response;
@@ -148,7 +147,7 @@ const buildBubbles = (numberOfBubbles)=>{
     
     const initialPos = {
       "x": getRandomNumber(50, BUBBLE_EFFECT_WIDTH-50),
-      "y": getRandomNumber(50, BUBBLE_EFFECT_HEIGHT-50)
+      "y": getRandomNumber(50, 100)//BUBBLE_EFFECT_HEIGHT-50)
     }
     bubbleArray.push(new Bubble(bubbleId, initialPos));
   }
@@ -179,7 +178,7 @@ document.onmousemove = function(event) {
   for(var i=0; i<bubbleArray.length; i++) {
     let distance = calcDistanceBetween(cursorPos, bubbleArray[i].getCenter());
   
-    if(distance < RADIUS + 25 && distance > 5) {
+    if(distance < RADIUS + 150 && distance > RADIUS - 2) {
       let responseVector = calcResponseVector(cursorPos, bubbleArray[i].getCenter());
       
       bubbleArray[i].changeVelocity(responseVector); 

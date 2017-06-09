@@ -34,18 +34,31 @@ body {
 .nav__menu-item {
 	margin: 0 10px;
 	&:first-child {
+		position: relative;
 		margin-right: auto;
 		img {
+			position: absolute;
+			top: 0;
+			left: 0;
 			width: 80px;
 		}
 	}
 }
 
+.logo-black {
+	transition: opacity 300ms ease-in-out;
+}
+
+.logo-cyan, .logo-yellow, .logo-magenta {
+	opacity: 0;
+	transition: opacity 300ms ease-in-out;
+}
+
 .sect-container {
 	position: relative;
 	width: 95%;
-	max-width: 960px;
-	margin: auto;
+	max-width: 1200px;
+	margin: 10px auto;
 }
 
 .sect {
@@ -74,6 +87,7 @@ body {
 .sect--contact {
 	opacity: 0;
 	visibility: hidden;
+	font-family: $cabin-font;
 }
 
 .sect__description {
@@ -118,34 +132,86 @@ body {
 }
 
 .social-icon {
-	color: $black;
+	color: $cyan;
+}
+
+.project-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	width: 80%;
+	margin: auto;
+}
+
+.project-mask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: $yellow;
+	opacity: 0.7;
+	width: 100%;
+	height: 100%;
+	transition: opacity 300ms ease-in-out;
 }
 
 .project {
-	display: flex;
-	justify-content: space-around;
-	align-content: center;
-	width: 95%;
+	position: relative;
+	width: 30%;
+	height: 200px;
 	margin: 10px;
-	overflow: hidden;
+	text-align: center;
+	&:hover {
+		.project-mask {
+			opacity: 0;
+		}
+		.project__info {
+			position: relative;
+			top: -15%;
+			left: -15%;
+			width: 130%;
+			height: 130%;
+			background: $yellow;
+			z-index: 1;
+		}
+		.project__description {
+			opacity: 1;
+		}
+	}
 }
 
 .project__info {
-	width: 80%;
-	margin-left: 10px;
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	font-family: $cabin-font;
+	transition: all 300ms ease-in-out;
 }
 
 .project__title {
+	position: relative;
+    top: 50px;
 	font-size: 30px;
-	margin: 10px 0;
+	width: 85%;
+	margin: 10px auto;
 }
 
 .project__description {
+	position: relative;
+    top: 50px;
+    width: 80%;
+    margin: auto;
 	font-size: 15px;
+	opacity: 0;
+	transition: opacity 300ms ease-in-out;
 }
 
 .project__tech-list {
 	padding: 0;
+	opacity: 0;
 }
 
 .project__tech-list-item {
@@ -154,6 +220,19 @@ body {
 		&:after {
 			content: " / ";
 		}
+	}
+}
+
+.contact__email-address {
+	margin-top: 30%;
+	text-align: center;
+	font-size: 30px;
+	.email-icon {
+		font-size: 50px;
+		color: $magenta;
+	}
+	span {
+		vertical-align: middle;
 	}
 }
 
