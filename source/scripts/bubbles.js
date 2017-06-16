@@ -178,7 +178,7 @@ document.onmousemove = function(event) {
   for(var i=0; i<bubbleArray.length; i++) {
     let distance = calcDistanceBetween(cursorPos, bubbleArray[i].getCenter());
   
-    if(distance < RADIUS + 150 && distance > RADIUS - 2) {
+    if(distance < RADIUS + 75 && distance > RADIUS - 2) {
       let responseVector = calcResponseVector(cursorPos, bubbleArray[i].getCenter());
       
       bubbleArray[i].changeVelocity(responseVector); 
