@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="471px" height="357px" viewBox="0 0 471 357" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>partly-cloudy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="167" y="99" width="64" height="17" rx="8"></rect>
+        <rect id="path-2" x="210.046483" y="43.171764" width="64" height="17" rx="8"></rect>
+        <rect id="path-3" x="286.611606" y="23.7771522" width="64" height="17" rx="8"></rect>
+        <rect id="path-4" x="368.72891" y="55.9682446" width="64" height="17" rx="8"></rect>
+        <rect id="path-5" x="406.067973" y="124.467429" width="64" height="17" rx="8"></rect>
+        <rect id="path-6" x="393.807177" y="207.26714" width="64" height="17" rx="8"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="partly-cloudy" transform="translate(1.000000, 0.000000)">
+            <path d="M229.992179,142.621204 C219.497411,138.370755 207.813753,136 195.5,136 C163.711671,136 136.122482,151.799425 122.346003,174.949988 C113.729766,171.755791 104.334469,170 94.5,170 C52.8025014,170 19,201.563925 19,240.5 C19,245.234504 19.4997969,249.860006 20.4528114,254.333009 C7.35779739,263.73044 0,274.310811 0,285.5 C0,324.436075 89.0953348,356 199,356 C308.904665,356 398,324.436075 398,285.5 C398,272.740697 388.432367,260.773063 371.700113,250.448417 C371.898541,248.161126 372,245.84337 372,243.5 C372,236.876705 371.18949,230.458027 369.669829,224.35352 C387.057559,208.789526 398,186.172635 398,161 C398,114.055796 359.944204,76 313,76 C272.366294,76 238.391954,104.512134 229.992179,142.621204 Z" id="Combined-Shape" stroke="#000000" fill="#000000"></path>
+            <g id="Rectangle" transform="translate(199.000000, 107.500000) rotate(18.000000) translate(-199.000000, -107.500000) ">
+                <use fill="#000000" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <rect stroke="#000000" stroke-width="1" x="167.5" y="99.5" width="63" height="16" rx="8"></rect>
+            </g>
+            <g id="Rectangle" transform="translate(242.046483, 51.671764) rotate(-305.000000) translate(-242.046483, -51.671764) ">
+                <use fill="#000000" fill-rule="evenodd" xlink:href="#path-2"></use>
+                <rect stroke="#000000" stroke-width="1" x="210.546483" y="43.671764" width="63" height="16" rx="8"></rect>
+            </g>
+            <g id="Rectangle" transform="translate(318.611606, 32.277152) rotate(92.000000) translate(-318.611606, -32.277152) ">
+                <use fill="#000000" fill-rule="evenodd" xlink:href="#path-3"></use>
+                <rect stroke="#000000" stroke-width="1" x="287.111606" y="24.2771522" width="63" height="16" rx="8"></rect>
+            </g>
+            <g id="Rectangle" transform="translate(400.728910, 64.468245) rotate(-48.000000) translate(-400.728910, -64.468245) ">
+                <use fill="#000000" fill-rule="evenodd" xlink:href="#path-4"></use>
+                <rect stroke="#000000" stroke-width="1" x="369.22891" y="56.4682446" width="63" height="16" rx="8"></rect>
+            </g>
+            <g id="Rectangle" transform="translate(438.067973, 132.967429) rotate(-12.000000) translate(-438.067973, -132.967429) ">
+                <use fill="#000000" fill-rule="evenodd" xlink:href="#path-5"></use>
+                <rect stroke="#000000" stroke-width="1" x="406.567973" y="124.967429" width="63" height="16" rx="8"></rect>
+            </g>
+            <g id="Rectangle" transform="translate(425.807177, 215.767140) rotate(31.000000) translate(-425.807177, -215.767140) ">
+                <use fill="#000000" fill-rule="evenodd" xlink:href="#path-6"></use>
+                <rect stroke="#000000" stroke-width="1" x="394.307177" y="207.76714" width="63" height="16" rx="8"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
