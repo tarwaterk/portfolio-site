@@ -18,7 +18,7 @@ let Bubble = class {
     this.domElement.style = BUBBLE_SIZE_STYLE;
     this.pos = pos;
     this.vel = {
-      "x": getRandomNumber(-0.5,0.5),//getRandomNumber(-2,2),
+      "x": getRandomNumber(-10,10),//getRandomNumber(-2,2),
       "y": getRandomNumber(0,30)
     };
     this.center = {
