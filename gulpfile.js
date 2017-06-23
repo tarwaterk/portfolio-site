@@ -32,7 +32,7 @@ gulp.task("buildScripts", function() {
 		.pipe(browserSync.stream());
 });
 
-gulp.task("buildServerStyles" function() {
+gulp.task("buildServerStyles", function() {
 	return gulp.src("./source/styles/*.scss")
 		.pipe(sass().on("error", sass.logError))
 		.pipe(autoprefixer({
