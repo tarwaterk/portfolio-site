@@ -30,7 +30,24 @@ gulp.task("buildScripts", function() {
 		}))
 		.pipe(gulp.dest("dist/scripts"))
 		.pipe(browserSync.stream());
-})
+});
+
+gulp.task("buildServerStyles" function() {
+	return gulp.src("./source/styles/*.scss")
+		.pipe(sass().on("error", sass.logError))
+		.pipe(autoprefixer({
+			browsers: ['last 2 version'],
+			cascade: false
+		}))
+		.pipe(gulp.dest("./dist/styles"));
+});
+gulp.task("buildServerScripts", function() {
+	return gulp.src("source/scripts/*.js")
+		.pipe(babel({
+			presets: ['es2015']
+		}))
+		.pipe(gulp.dest("dist/scripts"));
+});
 
 gulp.task("nodemon", function() {
 	nodemon({
