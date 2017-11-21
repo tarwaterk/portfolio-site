@@ -1,4 +1,3 @@
-const navLinks = document.querySelectorAll(".nav__menu-item a");
 
 const handleViewChange = (sectionId) => {
 	let selectedSection = document.getElementById(sectionId);
@@ -37,6 +36,7 @@ const handleViewChange = (sectionId) => {
 	selectedSection.setAttribute("style", "opacity:1;visibility:visible");
 };
 
+const navLinks = document.querySelectorAll(".nav__menu-item a, .mobile-nav__menu a");
 navLinks.forEach(function(navItem) {
 	navItem.addEventListener("click", function(event) {
 		event.preventDefault();
@@ -44,6 +44,20 @@ navLinks.forEach(function(navItem) {
 
 		handleViewChange(sectionId);
 	});
+});
+
+const mobileNavBtn = document.getElementById("mobile-nav-button");
+mobileNavBtn.addEventListener("click", ()=> {
+	let mobileNav = document.getElementById("mobile-nav");
+	const isOpen = /active/.test(mobileNav.className);
+
+	if(isOpen) {
+		mobileNav.className = mobileNav.className.match(/(.*)\sactive/)[1];
+	}else {
+		mobileNav.className = mobileNav.className + " active";
+	}
+
+	console.log(mobileNav.className);
 });
 
 window.onload = () => {
