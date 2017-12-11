@@ -1,21 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html class="mdc-typography">
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>
 		World's Best Portfolio
 	</title>
 	<link href="https://fonts.googleapis.com/css?family=Cabin|Raleway" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
 	<link rel="stylesheet" type="text/css" href="/dist/styles/index.css" />
 	<script src="https://use.fontawesome.com/e1366c5969.js"></script>
 </head>
 
 <body>
-    
+    <div class="mdc-menu-anchor">
+      <button class="mdc-button mdc-button--raised toggle">
+        Menu
+      </button>
+
+      <div class="mdc-simple-menu" tabindex="-1" id="demo-menu">
+        <ul class="mdc-simple-menu__items mdc-list" role="menu" aria-hidden="true" >
+          <li class="mdc-list-item" role="menuitem" tabindex="0" >Projects</li>
+          <li class="mdc-list-item" role="menuitem" tabindex="0" >About</li>
+          <li class="mdc-list-item" role="menuitem" tabindex="0" >Contact</li>
+          <li class="mdc-list-divider" role="separator"></li>
+        </ul>
+      </div>
+    </div>
 </body>
 
 <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+<script>window.mdc.autoInit();</script>
 <script type="text/javascript" src="/dist/scripts/index.js"></script>
 
 </html>
