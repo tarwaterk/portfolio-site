@@ -2,11 +2,13 @@
 <html class="mdc-typography">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>
 		World's Best Portfolio
 	</title>
+
+  <link rel="stylesheet" type="text/css" href="/dist/styles/theme.css" />
 	<link href="https://fonts.googleapis.com/css?family=Cabin|Raleway" rel="stylesheet">
     <link
       rel="stylesheet"
@@ -21,14 +23,81 @@
         Menu
       </button>
 
-      <div class="mdc-simple-menu" tabindex="-1" id="demo-menu">
+      <div class="mdc-simple-menu" tabindex="-1" id="main-nav">
         <ul class="mdc-simple-menu__items mdc-list" role="menu" aria-hidden="true" >
-          <li class="mdc-list-item" role="menuitem" tabindex="0" >Projects</li>
           <li class="mdc-list-item" role="menuitem" tabindex="0" >About</li>
+          <li class="mdc-list-item" role="menuitem" tabindex="0" >Projects</li>
           <li class="mdc-list-item" role="menuitem" tabindex="0" >Contact</li>
-          <li class="mdc-list-divider" role="separator"></li>
         </ul>
       </div>
+    </div>
+
+    <!--
+    <div class="mdc-card banner-card">
+      <section class="mdc-card__media banner-card__media"></section>
+    </div>
+  -->
+
+    <div class="mdc-card intro">
+      <section class="mdc-card__primary">
+        <h1 class="mdc-card__title mdc-card__title--large mdc-theme--primary-light-bg mdc-theme--text-primary-on-primary-light">Kevin Tarwater</h1>
+        <h2 class="mdc-card__subtitle">Web Developer</h2>
+      </section>
+      <section class="mdc-card__supporting-text">
+        I'm a classically trained physicist turned web developer. After finding that academia wasn't for me, I fell back to my first love of coding and started teaching myself the ropes. I have since continued to dive deeper into the seemingly infinite ocean of customer facing user interfaces and supporting architectures. I am currently happily employed as a Web Developer at Caleres Inc.
+      </section>
+      <section class="mdc-card__actions">
+        <nav id="basic-tab-bar" class="mdc-tab-bar">
+          <a class="mdc-tab" href="https://github.com/tarwaterk" target="_blank">Github</a>
+          <a class="mdc-tab" href="https://codepen.io/tarwaterk" target="_blank">Codepen</a>
+          <a class="mdc-tab" href="https://www.linkedin.com/in/kevin-t-tarwater/" target="_blank">Linkedin</a>
+          <span class="mdc-tab-bar__indicator"></span>
+        </nav>
+      </section>
+    </div>
+
+    <div class="mdc-card project">
+      <section class="mdc-card__primary">
+        <h1 class="mdc-card__title mdc-card__title--large mdc-theme--primary-light-bg mdc-theme--text-primary-on-primary-light">Bubbles</h1>
+      </section>
+      <section class="mdc-card__supporting-text">
+        Interact with bubbles created using Canvas
+      </section>
+      <section class="mdc-card__actions">
+        <nav id="basic-tab-bar" class="mdc-tab-bar">
+          <a class="mdc-tab" href="/">Github</a>
+          <a class="mdc-tab" href="/">Live Example</a>
+          <span class="mdc-tab-bar__indicator"></span>
+        </nav>
+      </section>
+    </div>
+
+    <div class="mdc-card project">
+      <section class="mdc-card__primary">
+        <h1 class="mdc-card__title mdc-card__title--large mdc-theme--primary-light-bg mdc-theme--text-primary-on-primary-light">Gift Budget Application</h1>
+        <h2 class="mdc-card__subtitle">React / Express / MySQL</h2>
+      </section>
+      <section class="mdc-card__supporting-text">
+        Application to aid in keeping track of gift budgets.
+      </section>
+      <section class="mdc-card__actions">
+        <nav id="basic-tab-bar" class="mdc-tab-bar">
+          <a class="mdc-tab" href="/">Github</a>
+          <a class="mdc-tab" href="/">Live Example</a>
+          <span class="mdc-tab-bar__indicator"></span>
+        </nav>
+      </section>
+    </div>
+
+    <div class="mdc-card contact-info">
+      <section class="mdc-card__primary">
+        <h1 class="mdc-card__title mdc-card__title--large mdc-theme--primary-light-bg mdc-theme--text-primary-on-primary-light">Contact Information</h1>
+      </section>
+      <section class="mdc-card__actions">
+        <nav id="basic-tab-bar" class="mdc-tab-bar">
+          <a class="mdc-tab" href="mailto:tarwaterk@gmail.com?Subject=Message%20From%20Website">tarwaterk@gmail.com</a>
+        </nav>
+      </section>
     </div>
 </body>
 
